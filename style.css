@@ -1,0 +1,78 @@
+.folder, .file {
+    margin-left: 20px;
+}
+
+.folder::before, .file::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background-size: cover;
+}
+
+.folder::before {
+    background-image: url('folder-icon.png');
+}
+
+.file::before {
+    background-image: url('file-icon.png');
+}
+
+.children {
+    display: none;
+    margin-left: 20px;
+}
+
+.folder .toggle-icon {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.folder:hover {
+    background-color: #f0f0f0;
+}
+
+.open {
+    display: block;
+}
+
+.txt-file:hover {
+    color: blue;
+}
+
+/* Icon Styles */
+.toggle-icon {
+    font-size: 1.2em;
+    margin-right: 5px;
+    color: #6c757d; /* เปลี่ยนสีไอคอนเป็นสีเทาเข้ม */
+}
+
+.folder:before {
+    content: "\f07b"; /* ไอคอนของโฟลเดอร์ */
+    font-family: "Font Awesome 5 Free";
+    margin-right: 5px;
+    color: #007bff; /* เปลี่ยนสีไอคอนโฟลเดอร์เป็นสีน้ำเงิน */
+}
+
+.txt-file:before {
+    content: "\f15b"; /* ไอคอนของไฟล์ */
+    font-family: "Font Awesome 5 Free";
+    margin-right: 5px;
+    color: #28a745; /* เปลี่ยนสีไอคอนไฟล์เป็นสีเขียว */
+}
+
+/* Button Styles */
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* เปลี่ยนสีปุ่มเมื่อเมาส์ Hover ไป */
+}

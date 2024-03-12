@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Folder Structure Tree</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- เพิ่มไอคอน FontAwesome -->
+  </head>
+  <body>
+    <div id="folderTree"></div>
+    <form id="addItemForm">
+      <label for="selectInput">เลือกโฟลเดอร์:</label>
+      <select id="selectInput"></select>
+      <label for="newItemInput">ชื่อไฟล์ใหม่:</label>
+      <input type="text" id="newItemInput" required />
+      <button type="button" id="addButton">
+        เพิ่มไฟล์ <i class="fas fa-plus"></i>
+      </button>
+    </form>
+    <form id="deleteItemForm">
+      <label for="deleteSelect">เลือกไฟล์หรือโฟลเดอร์ที่ต้องการลบ:</label>
+      <select id="deleteSelect"></select>
+      <button type="button" id="deleteButton">
+        ลบไฟล์หรือโฟลเดอร์ <i class="fas fa-trash-alt"></i>
+      </button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
